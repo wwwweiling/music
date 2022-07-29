@@ -1,0 +1,101 @@
+
+// Functions first
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+$color1:#D01A48;
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+
+  /*導覽列-nav*/
+
+body{
+    background-color: green;
+}
+
+nav{
+
+
+div a.navbar-brand{
+    flex:3;
+    } 
+
+div.collapse{
+    flex:3;
+   
+    .navbar-nav{
+        font-size: 1vw;
+        text-align: center;
+        align-items: center;
+        position: relative;
+
+        /*之後做單個連結會用到-關於我們*/
+        // .active{
+        //     background-color:$color1;
+        //     border-radius: 50px;
+        // }
+
+        .nav-link{
+            padding-right: 20px;
+            padding-left: 20px;
+            
+        a{
+            color:white;
+            text-decoration:none;
+        }   
+
+        }
+
+        li a{
+            color:black;
+            text-decoration:none;
+            
+        }
+
+        ul{ 
+            position: absolute;
+            padding:0;
+            left: 1vw;
+            display: none;
+
+
+        }
+
+
+
+        ul li{
+            list-style: none;
+            background-color:blue;
+            padding-right:calc(4vw + 20px) ;
+            line-height: 30px;
+            text-align: left;
+
+        }
+
+    }
+        
+
+}
+        
+div.nav-icon{
+    display:flex;
+    flex:1;
+}
+
+
+}
+
+
+
+.navbar-nav>.nav-link:hover {
+    background-color:$color1;
+    border-radius: 50px;
+}
