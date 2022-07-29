@@ -25,14 +25,14 @@ nav{
 
 
 div a.navbar-brand{
-    flex:3;
+    flex:2;
     } 
 
 div.collapse{
     flex:3;
    
     .navbar-nav{
-        font-size: 1vw;
+        font-size: 1.2vw;
         text-align: center;
         align-items: center;
         position: relative;
@@ -43,16 +43,16 @@ div.collapse{
         //     border-radius: 50px;
         // }
 
-        .nav-link{
-            padding-right: 20px;
-            padding-left: 20px;
+        div.nav-link{
+            line-height: 15px;
+            margin-right:10px;
             
         a{
             color:white;
             text-decoration:none;
         }   
 
-        }
+
 
         li a{
             color:black;
@@ -60,42 +60,154 @@ div.collapse{
             
         }
 
-        ul{ 
-            position: absolute;
-            padding:0;
-            left: 1vw;
-            display: none;
 
-
+        
+              
         }
-
-
-
-        ul li{
-            list-style: none;
-            background-color:blue;
-            padding-right:calc(4vw + 20px) ;
-            line-height: 30px;
-            text-align: left;
-
-        }
-
     }
         
 
 }
+
+}
         
-div.nav-icon{
+    div.nav-icon{
     display:flex;
-    flex:1;
-}
-
-
-}
+    flex:2;
+    }
 
 
 
-.navbar-nav>.nav-link:hover {
+
+// 此區為下選單
+div.nav-link ul {
+        display: none;
+    }
+
+div.nav-link:hover{
     background-color:$color1;
-    border-radius: 50px;
+    border-radius: 10px;
+
 }
+
+div.nav-link:hover ul{
+    display: block;
+    position: absolute;
+    padding:0;
+    left: 0;
+    top:3vw;
+}
+
+div.nav-link:hover .ul2{
+    display: block;
+    position: absolute;
+    left: 7vw;
+    top:3vw;
+}
+
+div.nav-link:hover .ul3{
+    display: block;
+    position: absolute;
+    left: 13.5vw;
+    top:3vw;
+}
+
+div.nav-link:hover .ul4{
+    display: block;
+    position: absolute;
+    left: 20vw;
+    top:3vw;
+}
+
+div.nav-link:hover .ul5{
+    display: block;
+    position: absolute;
+    left: 27vw;
+    top:3vw;
+}
+
+div.nav-link:hover .ul6{
+    display: block;
+    position: absolute;
+    left: 34vw;
+    top:3vw;
+}
+
+div.nav-link .ul1 li{
+    background-color:rgb(219, 219, 223);
+    list-style: none;
+    padding-right:5vw ;
+    line-height: 40px;
+    font-size: 1vw;
+}   
+
+div.nav-link .ul2 li{
+    background-color:rgb(219, 219, 223);
+    list-style: none;
+    padding-right: 6vw;
+    line-height: 40px;
+    font-size: 1vw;
+    padding-left:1vw ;
+}  
+
+div.nav-link .ul3 li , 
+div.nav-link .ul4 li{
+    background-color:rgb(219, 219, 223);
+    list-style: none;
+    padding-right: 7vw;
+    line-height: 40px;
+    font-size: 1vw;
+    padding-left:1vw ;
+}  
+
+
+div.nav-link .ul5 li{
+    background-color:rgb(219, 219, 223);
+    list-style: none;
+    padding-right: 6vw;
+    line-height: 40px;
+    font-size: 1vw;
+    padding-left:1vw ;
+
+}
+
+
+div.nav-link .ul6 li{
+    background-color:rgb(219, 219, 223);
+    list-style: none;
+    padding-right:5vw ;
+    line-height: 40px;
+    font-size: 1vw;
+    white-space: nowrap;
+    padding-left:1vw ;
+}
+
+div.nav-link ul li:hover{
+    background-color:rgb(238, 238, 238); }
+
+
+ 
+
+
+            // ul{ 
+        // //     display: block;
+        // //     position: absolute;
+        // //     padding:0;
+        // //     left: 0;
+        // //     top:3vw;
+        //     display: none;
+
+
+        // // }
+
+
+
+        // // ul li{
+        // //     display: block;
+        // //     list-style: none;
+        // //     background-color:blue;
+        // //     padding-right:5vw ;
+        // //     line-height: 40px;
+        // //     font-size: 1.2vw;
+        // //     // text-align: right;
+        // // }
